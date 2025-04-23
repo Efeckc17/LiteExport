@@ -1,6 +1,6 @@
 # LiteExport
 
-**LiteExport** is a lightweight, GUI-powered SQLite export tool built with Python and PyQt6.  
+**LiteExport** is a lightweight, GUI-powered SQLite export tool built with Python and PyQt5.  
 It allows you to export tables from `.sqlite` or `.db` files into clean, readable formats such as:
 
 - TXT  
@@ -14,7 +14,7 @@ No CLI skills required — just point, click, and export.
 
 ## 📸 Preview
 
-![UI Screenshot](src/screenshot.png)
+![UI Screenshot](img/screenshot.png)
 
 ---
 
@@ -23,8 +23,23 @@ No CLI skills required — just point, click, and export.
 - Export multiple tables at once
 - Choose from 4 different output formats
 - Chunked export to handle large databases smoothly
-- Simple, fast, and responsive PyQt6 interface
+- Simple, fast, and responsive PyQt5 interface
 - Real-time progress feedback
+- Modern dark/light theme support
+- User-friendly interface with tooltips
+- Multi-table selection with clear visual feedback
+- Professional and clean design
+
+---
+
+## 🎨 Themes
+
+LiteExport comes with two beautiful themes:
+
+- **Dark Theme**: Professional dark interface with easy-on-the-eyes colors
+- **Light Theme**: Clean and modern light interface
+
+Switch between themes easily from the Settings menu.
 
 ---
 
@@ -32,15 +47,19 @@ No CLI skills required — just point, click, and export.
 
 ```bash
 LiteExport/
-├── src/
-│   ├── main.py
-│   ├── ui.py
-│   ├── converter.py
+├── img/
 │   └── screenshot.png
-├── output/                  # Output folder for exported files
-├── requirements.txt
+├── src/
+│   ├── themes/
+│   │   ├── dark.css
+│   │   └── light.css
+│   ├── converter.py
+│   ├── main.py
+│   └── ui.py
+├── .gitignore
 ├── LICENSE
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -61,7 +80,7 @@ python src/main.py
 ## 🔪 Requirements
 
 - Python 3.10+
-- PyQt6
+- PyQt5
 
 ---
 
